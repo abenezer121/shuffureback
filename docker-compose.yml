@@ -1,0 +1,72 @@
+version: '3.4'
+services:
+  shuufare-refactored:
+    container_name: shuufare-refactored
+    # restart: always
+    build:
+      context: .
+      # dockerfile: dev.Dockerfile
+      dockerfile: Dockerfile
+    # volumes:
+      # - api:/usr/src/app/
+      # - .:/usr/src/shuufare/
+    ports:
+      - '8000:8000'
+      - '8001:8001'
+    links:
+      - shuufare-redis-refactored
+      - shuufare-mongo-refactored
+    depends_on:
+      - shuufare-redis-refactored
+      - shuufare-mongo-refactored
+    env_file:
+      - .env
+  shuufare-mongo-refactored:
+    container_name: shuufare-mongo-refactored
+    image: 'mongo:4.4'
+    logging:
+      driver: none
+    # ports:
+    #   - '27017:27017'
+    # privileged: true
+    hostname: shuufare-mongo-refactored
+    volumes:
+      - ../shuufare-refactored-data/db:/data/db
+      - ${PWD}/docker-entrypoint-initdb.d/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongod:/etc/shuufare-mongod
+
+    #logging:
+    #  driver: none
+    # restart: always
+    # command: [--auth]
+    # entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "shuufare", "--journal", "--dbpath", "/data/db", "--enableMajorityReadConcern", "false" ]
+    env_file:
+      - .env
+    command: ["--config", "/etc/shuufare-mongod/mongod.conf", "--replSet", "${MONGO_REPLICA_SET_NAME}", "--bind_ip_all"]
+    # command: ["numactl","--interleave=all", "mongod", "--config", "/etc/shuufare-mongod/mongod.conf", "--replSet", "${MONGO_REPLICA_SET_NAME}", "--bind_ip_all"]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: shuufare_admin
+      MONGO_INITDB_ROOT_PASSWORD: pnf82JKuYbNAhMmQfZLtN
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+      MONGO_REPLICA_SET_NAME: ${MONGO_REPLICA_SET_NAME}
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u $${MONGO_INITDB_ROOT_USERNAME} -p $${MONGO_INITDB_ROOT_PASSWORD} --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+  shuufare-redis-refactored:
+    container_name: shuufare-redis-refactored
+    image: 'redis:4.0.11'
+    restart: always
+    # ports:
+    #     - 6379:6379
+  shuufare-backup-refactored: # automated mongo backup
+    image: 'tibebesjs/mgob'
+    container_name: 'shuufare-backup-refactored'
+    restart: always
+    #    ports:
+            #      - '8090:8090'
+    volumes:
+      - ./mgob/config:/config
+      - ../db-backups-refactored:/storage
+      - ./mgob/tmp:/tmp
+      - ./mgob/data:/data

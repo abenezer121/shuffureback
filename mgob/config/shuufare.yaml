@@ -1,0 +1,49 @@
+scheduler:
+  # run every day at 6:00 and 18:00 UTC
+  # cron: "0 6,18 */1 * *"
+  cron: "*/30 * * * *"
+  # number of backups to keep locally
+  retention: 100
+  # backup operation timeout in minutes
+  timeout: 120
+
+target:
+  # mongod IP or host name
+  host: "shuufare-mongo-refactored"
+  # mongodb port
+  port: 27017
+  # mongodb database name, leave blank to backup all databases
+  database: "shuufaremain-latest"
+  username: "shuufare_admin"
+  password: "pnf82JKuYbNAhMmQfZLtN"
+  params: "--authenticationDatabase admin"
+
+# S3 upload
+s3:
+        #url: "https://shuufare-backups.s3.amazonaws.com"
+  url: "https://s3-eu-west-2.amazonaws.com/"
+  bucket: "shuufare-backups/"
+  # accessKey and secretKey are optional for AWS, if your Docker image has awscli
+  accessKey: "AKIARL3FUHPGVFIWAOPV"
+  secretKey: "RXg0k/JEwbFZYRBC+KqqeHp1HCMTdR5POmZDuNCk"
+  api: "S3v4"
+
+# telegram:
+#   token: 1718709163:AAEv_RMzo1VS5lw0pRv2vxVJcjHCILfpyOE
+#   channel: -567166833
+
+# telegram: # test
+#   token: 1718709163:AAEv_RMzo1VS5lw0pRv2vxVJcjHCILfpyOE
+#   channel: -538879086
+
+
+
+# Email notifications (optional)
+# smtp:
+#   server: smtp.gmail.com
+#   port: 587
+#   username: backupservice@gmail.com
+#   password: password
+#   from: backupservice@gmail.com
+#   to:
+#     - test@gmail.com

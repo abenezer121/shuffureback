@@ -1,0 +1,300 @@
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     _eventsCount: 7,
+[35mshuufare-refactored           |[0m     _maxListeners: undefined,
+[35mshuufare-refactored           |[0m     outputData: [],
+[35mshuufare-refactored           |[0m     outputSize: 0,
+[35mshuufare-refactored           |[0m     writable: true,
+[35mshuufare-refactored           |[0m     destroyed: false,
+[35mshuufare-refactored           |[0m     _last: true,
+[35mshuufare-refactored           |[0m     chunkedEncoding: false,
+[35mshuufare-refactored           |[0m     shouldKeepAlive: false,
+[35mshuufare-refactored           |[0m     _defaultKeepAlive: true,
+[35mshuufare-refactored           |[0m     useChunkedEncodingByDefault: true,
+[35mshuufare-refactored           |[0m     sendDate: false,
+[35mshuufare-refactored           |[0m     _removedConnection: false,
+[35mshuufare-refactored           |[0m     _removedContLen: false,
+[35mshuufare-refactored           |[0m     _removedTE: false,
+[35mshuufare-refactored           |[0m     _contentLength: null,
+[35mshuufare-refactored           |[0m     _hasBody: true,
+[35mshuufare-refactored           |[0m     _trailer: '',
+[35mshuufare-refactored           |[0m     finished: true,
+[35mshuufare-refactored           |[0m     _headerSent: true,
+[35mshuufare-refactored           |[0m     _closed: false,
+[35mshuufare-refactored           |[0m     socket: TLSSocket {
+[35mshuufare-refactored           |[0m       _tlsOptions: [Object],
+[35mshuufare-refactored           |[0m       _secureEstablished: true,
+[35mshuufare-refactored           |[0m       _securePending: false,
+[35mshuufare-refactored           |[0m       _newSessionPending: false,
+[35mshuufare-refactored           |[0m       _controlReleased: true,
+[35mshuufare-refactored           |[0m       secureConnecting: false,
+[35mshuufare-refactored           |[0m       _SNICallback: null,
+[35mshuufare-refactored           |[0m       servername: 'fcm.googleapis.com',
+[35mshuufare-refactored           |[0m       alpnProtocol: false,
+[35mshuufare-refactored           |[0m       authorized: true,
+[35mshuufare-refactored           |[0m       authorizationError: null,
+[35mshuufare-refactored           |[0m       encrypted: true,
+[35mshuufare-refactored           |[0m       _events: [Object: null prototype],
+[35mshuufare-refactored           |[0m       _eventsCount: 10,
+[35mshuufare-refactored           |[0m       connecting: false,
+[35mshuufare-refactored           |[0m       _hadError: false,
+[35mshuufare-refactored           |[0m       _parent: null,
+[35mshuufare-refactored           |[0m       _host: 'fcm.googleapis.com',
+[35mshuufare-refactored           |[0m       _readableState: [ReadableState],
+[35mshuufare-refactored           |[0m       _maxListeners: undefined,
+[35mshuufare-refactored           |[0m       _writableState: [WritableState],
+[35mshuufare-refactored           |[0m       allowHalfOpen: false,
+[35mshuufare-refactored           |[0m       _sockname: null,
+[35mshuufare-refactored           |[0m       _pendingData: null,
+[35mshuufare-refactored           |[0m       _pendingEncoding: '',
+[35mshuufare-refactored           |[0m       server: undefined,
+[35mshuufare-refactored           |[0m       _server: null,
+[35mshuufare-refactored           |[0m       ssl: [TLSWrap],
+[35mshuufare-refactored           |[0m       _requestCert: true,
+[35mshuufare-refactored           |[0m       _rejectUnauthorized: true,
+[35mshuufare-refactored           |[0m       parser: null,
+[35mshuufare-refactored           |[0m       _httpMessage: [Circular *1],
+[35mshuufare-refactored           |[0m       [Symbol(res)]: [TLSWrap],
+[35mshuufare-refactored           |[0m       [Symbol(verified)]: true,
+[35mshuufare-refactored           |[0m       [Symbol(pendingSession)]: null,
+[35mshuufare-refactored           |[0m       [Symbol(async_id_symbol)]: 365414062,
+[35mshuufare-refactored           |[0m       [Symbol(kHandle)]: [TLSWrap],
+[35mshuufare-refactored           |[0m       [Symbol(kSetNoDelay)]: false,
+[35mshuufare-refactored           |[0m       [Symbol(lastWriteQueueSize)]: 0,
+[35mshuufare-refactored           |[0m       [Symbol(timeout)]: null,
+[35mshuufare-refactored           |[0m       [Symbol(kBuffer)]: null,
+[35mshuufare-refactored           |[0m       [Symbol(kBufferCb)]: null,
+[35mshuufare-refactored           |[0m       [Symbol(kBufferGen)]: null,
+[35mshuufare-refactored           |[0m       [Symbol(kCapture)]: false,
+[35mshuufare-refactored           |[0m       [Symbol(kBytesRead)]: 0,
+[35mshuufare-refactored           |[0m       [Symbol(kBytesWritten)]: 0,
+[35mshuufare-refactored           |[0m       [Symbol(connect-options)]: [Object],
+[35mshuufare-refactored           |[0m       [Symbol(RequestTimeout)]: undefined
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     _header: 'POST /fcm/send HTTP/1.1\r\n' +
+[35mshuufare-refactored           |[0m       'Accept: application/json, text/plain, */*\r\n' +
+[35mshuufare-refactored           |[0m       'Content-Type: application/json\r\n' +
+[35mshuufare-refactored           |[0m       'Authorization: Bearer AAAA2RqOe68:APA91bGqYlyMNx1shAiUUojjxGyiDVw43ydmH5RAxmKFG9qAEbUJw4ZYC0T-R87Q_h97OjRL1HAP7-escboSlho0blEKfhA0AarCzN3wiyjRTpcmTqUuNkwrbhWQ4jmPzguO2ZvOguA9\r\n' +
+[35mshuufare-refactored           |[0m       'User-Agent: axios/0.21.1\r\n' +
+[35mshuufare-refactored           |[0m       'Content-Length: 207\r\n' +
+[35mshuufare-refactored           |[0m       'Host: fcm.googleapis.com\r\n' +
+[35mshuufare-refactored           |[0m       'Connection: close\r\n' +
+[35mshuufare-refactored           |[0m       '\r\n',
+[35mshuufare-refactored           |[0m     _keepAliveTimeout: 0,
+[35mshuufare-refactored           |[0m     _onPendingData: [Function: nop],
+[35mshuufare-refactored           |[0m     agent: Agent {
+[35mshuufare-refactored           |[0m       _events: [Object: null prototype],
+[35mshuufare-refactored           |[0m       _eventsCount: 2,
+[35mshuufare-refactored           |[0m       _maxListeners: undefined,
+[35mshuufare-refactored           |[0m       defaultPort: 443,
+[35mshuufare-refactored           |[0m       protocol: 'https:',
+[35mshuufare-refactored           |[0m       options: [Object: null prototype],
+[35mshuufare-refactored           |[0m       requests: [Object: null prototype] {},
+[35mshuufare-refactored           |[0m       sockets: [Object: null prototype],
+[35mshuufare-refactored           |[0m       freeSockets: [Object: null prototype] {},
+[35mshuufare-refactored           |[0m       keepAliveMsecs: 1000,
+[35mshuufare-refactored           |[0m       keepAlive: false,
+[35mshuufare-refactored           |[0m       maxSockets: Infinity,
+[35mshuufare-refactored           |[0m       maxFreeSockets: 256,
+[35mshuufare-refactored           |[0m       scheduling: 'lifo',
+[35mshuufare-refactored           |[0m       maxTotalSockets: Infinity,
+[35mshuufare-refactored           |[0m       totalSocketCount: 2,
+[35mshuufare-refactored           |[0m       maxCachedSessions: 100,
+[35mshuufare-refactored           |[0m       _sessionCache: [Object],
+[35mshuufare-refactored           |[0m       [Symbol(kCapture)]: false
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     socketPath: undefined,
+[35mshuufare-refactored           |[0m     method: 'POST',
+[35mshuufare-refactored           |[0m     maxHeaderSize: undefined,
+[35mshuufare-refactored           |[0m     insecureHTTPParser: undefined,
+[35mshuufare-refactored           |[0m     path: '/fcm/send',
+[35mshuufare-refactored           |[0m     _ended: true,
+[35mshuufare-refactored           |[0m     res: IncomingMessage {
+[35mshuufare-refactored           |[0m       _readableState: [ReadableState],
+[35mshuufare-refactored           |[0m       _events: [Object: null prototype],
+[35mshuufare-refactored           |[0m       _eventsCount: 3,
+[35mshuufare-refactored           |[0m       _maxListeners: undefined,
+[35mshuufare-refactored           |[0m       socket: [TLSSocket],
+[35mshuufare-refactored           |[0m       httpVersionMajor: 1,
+[35mshuufare-refactored           |[0m       httpVersionMinor: 1,
+[35mshuufare-refactored           |[0m       httpVersion: '1.1',
+[35mshuufare-refactored           |[0m       complete: true,
+[35mshuufare-refactored           |[0m       rawHeaders: [Array],
+[35mshuufare-refactored           |[0m       rawTrailers: [],
+[35mshuufare-refactored           |[0m       aborted: false,
+[35mshuufare-refactored           |[0m       upgrade: false,
+[35mshuufare-refactored           |[0m       url: '',
+[35mshuufare-refactored           |[0m       method: null,
+[35mshuufare-refactored           |[0m       statusCode: 400,
+[35mshuufare-refactored           |[0m       statusMessage: 'Bad Request',
+[35mshuufare-refactored           |[0m       client: [TLSSocket],
+[35mshuufare-refactored           |[0m       _consuming: true,
+[35mshuufare-refactored           |[0m       _dumped: false,
+[35mshuufare-refactored           |[0m       req: [Circular *1],
+[35mshuufare-refactored           |[0m       responseUrl: 'https://fcm.googleapis.com/fcm/send',
+[35mshuufare-refactored           |[0m       redirects: [],
+[35mshuufare-refactored           |[0m       [Symbol(kCapture)]: false,
+[35mshuufare-refactored           |[0m       [Symbol(kHeaders)]: [Object],
+[35mshuufare-refactored           |[0m       [Symbol(kHeadersCount)]: 28,
+[35mshuufare-refactored           |[0m       [Symbol(kTrailers)]: null,
+[35mshuufare-refactored           |[0m       [Symbol(kTrailersCount)]: 0,
+[35mshuufare-refactored           |[0m       [Symbol(RequestTimeout)]: undefined
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     aborted: false,
+[35mshuufare-refactored           |[0m     timeoutCb: null,
+[35mshuufare-refactored           |[0m     upgradeOrConnect: false,
+[35mshuufare-refactored           |[0m     parser: null,
+[35mshuufare-refactored           |[0m     maxHeadersCount: null,
+[35mshuufare-refactored           |[0m     reusedSocket: false,
+[35mshuufare-refactored           |[0m     host: 'fcm.googleapis.com',
+[35mshuufare-refactored           |[0m     protocol: 'https:',
+[35mshuufare-refactored           |[0m     _redirectable: Writable {
+[35mshuufare-refactored           |[0m       _writableState: [WritableState],
+[35mshuufare-refactored           |[0m       _events: [Object: null prototype],
+[35mshuufare-refactored           |[0m       _eventsCount: 2,
+[35mshuufare-refactored           |[0m       _maxListeners: undefined,
+[35mshuufare-refactored           |[0m       _options: [Object],
+[35mshuufare-refactored           |[0m       _ended: true,
+[35mshuufare-refactored           |[0m       _ending: true,
+[35mshuufare-refactored           |[0m       _redirectCount: 0,
+[35mshuufare-refactored           |[0m       _redirects: [],
+[35mshuufare-refactored           |[0m       _requestBodyLength: 207,
+[35mshuufare-refactored           |[0m       _requestBodyBuffers: [],
+[35mshuufare-refactored           |[0m       _onNativeResponse: [Function (anonymous)],
+[35mshuufare-refactored           |[0m       _currentRequest: [Circular *1],
+[35mshuufare-refactored           |[0m       _currentUrl: 'https://fcm.googleapis.com/fcm/send',
+[35mshuufare-refactored           |[0m       [Symbol(kCapture)]: false
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     [Symbol(kCapture)]: false,
+[35mshuufare-refactored           |[0m     [Symbol(kNeedDrain)]: false,
+[35mshuufare-refactored           |[0m     [Symbol(corked)]: 0,
+[35mshuufare-refactored           |[0m     [Symbol(kOutHeaders)]: [Object: null prototype] {
+[35mshuufare-refactored           |[0m       accept: [Array],
+[35mshuufare-refactored           |[0m       'content-type': [Array],
+[35mshuufare-refactored           |[0m       authorization: [Array],
+[35mshuufare-refactored           |[0m       'user-agent': [Array],
+[35mshuufare-refactored           |[0m       'content-length': [Array],
+[35mshuufare-refactored           |[0m       host: [Array]
+[35mshuufare-refactored           |[0m     }
+[35mshuufare-refactored           |[0m   },
+[35mshuufare-refactored           |[0m   response: {
+[35mshuufare-refactored           |[0m     status: 400,
+[35mshuufare-refactored           |[0m     statusText: 'Bad Request',
+[35mshuufare-refactored           |[0m     headers: {
+[35mshuufare-refactored           |[0m       'content-type': 'text/plain; charset=UTF-8',
+[35mshuufare-refactored           |[0m       date: 'Mon, 08 Nov 2021 07:07:03 GMT',
+[35mshuufare-refactored           |[0m       expires: 'Mon, 08 Nov 2021 07:07:03 GMT',
+[35mshuufare-refactored           |[0m       'cache-control': 'private, max-age=0',
+[35mshuufare-refactored           |[0m       'x-content-type-options': 'nosniff',
+[35mshuufare-refactored           |[0m       'x-frame-options': 'SAMEORIGIN',
+[35mshuufare-refactored           |[0m       'content-security-policy': "frame-ancestors 'self'",
+[35mshuufare-refactored           |[0m       'x-xss-protection': '1; mode=block',
+[35mshuufare-refactored           |[0m       server: 'GSE',
+[35mshuufare-refactored           |[0m       'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"',
+[35mshuufare-refactored           |[0m       'accept-ranges': 'none',
+[35mshuufare-refactored           |[0m       vary: 'Accept-Encoding',
+[35mshuufare-refactored           |[0m       connection: 'close',
+[35mshuufare-refactored           |[0m       'transfer-encoding': 'chunked'
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     config: {
+[35mshuufare-refactored           |[0m       url: 'https://fcm.googleapis.com/fcm/send',
+[35mshuufare-refactored           |[0m       method: 'post',
+[35mshuufare-refactored           |[0m       data: '{"notification":{"title":"Trip ended","body":"You have arrived at your destination","sound":"sound"},"priority":"high","data":{"click_action":"FLUTTER_NOTIFICATION_CLICK","id":"1","status":"done","type":""}}',
+[35mshuufare-refactored           |[0m       headers: [Object],
+[35mshuufare-refactored           |[0m       transformRequest: [Array],
+[35mshuufare-refactored           |[0m       transformResponse: [Array],
+[35mshuufare-refactored           |[0m       timeout: 0,
+[35mshuufare-refactored           |[0m       adapter: [Function: httpAdapter],
+[35mshuufare-refactored           |[0m       xsrfCookieName: 'XSRF-TOKEN',
+[35mshuufare-refactored           |[0m       xsrfHeaderName: 'X-XSRF-TOKEN',
+[35mshuufare-refactored           |[0m       maxContentLength: -1,
+[35mshuufare-refactored           |[0m       maxBodyLength: -1,
+[35mshuufare-refactored           |[0m       validateStatus: [Function: validateStatus]
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     request: <ref *1> ClientRequest {
+[35mshuufare-refactored           |[0m       _events: [Object: null prototype],
+[35mshuufare-refactored           |[0m       _eventsCount: 7,
+[35mshuufare-refactored           |[0m       _maxListeners: undefined,
+[35mshuufare-refactored           |[0m       outputData: [],
+[35mshuufare-refactored           |[0m       outputSize: 0,
+[35mshuufare-refactored           |[0m       writable: true,
+[35mshuufare-refactored           |[0m       destroyed: false,
+[35mshuufare-refactored           |[0m       _last: true,
+[35mshuufare-refactored           |[0m       chunkedEncoding: false,
+[35mshuufare-refactored           |[0m       shouldKeepAlive: false,
+[35mshuufare-refactored           |[0m       _defaultKeepAlive: true,
+[35mshuufare-refactored           |[0m       useChunkedEncodingByDefault: true,
+[35mshuufare-refactored           |[0m       sendDate: false,
+[35mshuufare-refactored           |[0m       _removedConnection: false,
+[35mshuufare-refactored           |[0m       _removedContLen: false,
+[35mshuufare-refactored           |[0m       _removedTE: false,
+[35mshuufare-refactored           |[0m       _contentLength: null,
+[35mshuufare-refactored           |[0m       _hasBody: true,
+[35mshuufare-refactored           |[0m       _trailer: '',
+[35mshuufare-refactored           |[0m       finished: true,
+[35mshuufare-refactored           |[0m       _headerSent: true,
+[35mshuufare-refactored           |[0m       _closed: false,
+[35mshuufare-refactored           |[0m       socket: [TLSSocket],
+[35mshuufare-refactored           |[0m       _header: 'POST /fcm/send HTTP/1.1\r\n' +
+[35mshuufare-refactored           |[0m         'Accept: application/json, text/plain, */*\r\n' +
+[35mshuufare-refactored           |[0m         'Content-Type: application/json\r\n' +
+[35mshuufare-refactored           |[0m         'Authorization: Bearer AAAA2RqOe68:APA91bGqYlyMNx1shAiUUojjxGyiDVw43ydmH5RAxmKFG9qAEbUJw4ZYC0T-R87Q_h97OjRL1HAP7-escboSlho0blEKfhA0AarCzN3wiyjRTpcmTqUuNkwrbhWQ4jmPzguO2ZvOguA9\r\n' +
+[35mshuufare-refactored           |[0m         'User-Agent: axios/0.21.1\r\n' +
+[35mshuufare-refactored           |[0m         'Content-Length: 207\r\n' +
+[35mshuufare-refactored           |[0m         'Host: fcm.googleapis.com\r\n' +
+[35mshuufare-refactored           |[0m         'Connection: close\r\n' +
+[35mshuufare-refactored           |[0m         '\r\n',
+[35mshuufare-refactored           |[0m       _keepAliveTimeout: 0,
+[35mshuufare-refactored           |[0m       _onPendingData: [Function: nop],
+[35mshuufare-refactored           |[0m       agent: [Agent],
+[35mshuufare-refactored           |[0m       socketPath: undefined,
+[35mshuufare-refactored           |[0m       method: 'POST',
+[35mshuufare-refactored           |[0m       maxHeaderSize: undefined,
+[35mshuufare-refactored           |[0m       insecureHTTPParser: undefined,
+[35mshuufare-refactored           |[0m       path: '/fcm/send',
+[35mshuufare-refactored           |[0m       _ended: true,
+[35mshuufare-refactored           |[0m       res: [IncomingMessage],
+[35mshuufare-refactored           |[0m       aborted: false,
+[35mshuufare-refactored           |[0m       timeoutCb: null,
+[35mshuufare-refactored           |[0m       upgradeOrConnect: false,
+[35mshuufare-refactored           |[0m       parser: null,
+[35mshuufare-refactored           |[0m       maxHeadersCount: null,
+[35mshuufare-refactored           |[0m       reusedSocket: false,
+[35mshuufare-refactored           |[0m       host: 'fcm.googleapis.com',
+[35mshuufare-refactored           |[0m       protocol: 'https:',
+[35mshuufare-refactored           |[0m       _redirectable: [Writable],
+[35mshuufare-refactored           |[0m       [Symbol(kCapture)]: false,
+[35mshuufare-refactored           |[0m       [Symbol(kNeedDrain)]: false,
+[35mshuufare-refactored           |[0m       [Symbol(corked)]: 0,
+[35mshuufare-refactored           |[0m       [Symbol(kOutHeaders)]: [Object: null prototype]
+[35mshuufare-refactored           |[0m     },
+[35mshuufare-refactored           |[0m     data: 'to\n'
+[35mshuufare-refactored           |[0m   },
+[35mshuufare-refactored           |[0m   isAxiosError: true,
+[35mshuufare-refactored           |[0m   toJSON: [Function: toJSON]
+[35mshuufare-refactored           |[0m }
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.107.157 ==> /drivers/6156500841c72f01398b53e5 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.107.157 ==> /users/6164f2be1dfc6c01ff2ebf20/rate 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.111.250 ==> /drivers/auth/ 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.111.250 ==> /date 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.107.82 ==> /drivers/auth/ 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.107.82 ==> /date 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.86.121 ==> /drivers/auth/ 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.86.121 ==> /date 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:209.95.50.117 ==> /drivers/auth/ 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:209.95.50.117 ==> /drivers/auth/ 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:209.95.50.117 ==> /drivers/auth/ 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.77.193 ==> /route/ 
+[35mshuufare-refactored           |[0m [api]]
+[35mshuufare-refactored           |[0m  ::ffff:197.156.107.82 ==> /route/ 
